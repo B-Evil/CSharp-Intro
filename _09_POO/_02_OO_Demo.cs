@@ -28,7 +28,7 @@ public class Account {
     private double balance;
     private string number;
 
-    public Account(string number) {
+    public Account(string number) { //constructor
         if (string.IsNullOrWhiteSpace(number)) {
         throw new Exception("Invalide Account Number");
         }
