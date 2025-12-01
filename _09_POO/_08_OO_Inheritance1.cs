@@ -78,9 +78,6 @@ public class Triangle : Shape{
   public Point Point3 {set; get;}
   public Triangle (string borderColor, string backgroundColor, int borderWidth,
                    Point point1, Point point2, Point point3) : base(borderColor, backgroundColor, borderWidth){
-    BorderColor = borderColor; 
-    BorderWidth = borderWidth; 
-    BackgroundColor = backgroundColor;
     Point1 = point1;
     Point2 = point2;
     Point3 = point3;
@@ -92,9 +89,6 @@ public class Square : Shape{
   public Point Point2 {set; get;}
   public Square (string borderColor, string backgroundColor, int borderWidth,
                   Point point1, Point point2) :  base(borderColor, backgroundColor, borderWidth){
-    BorderColor = borderColor; 
-    BorderWidth = borderWidth; 
-    BackgroundColor = backgroundColor;
     Point1 = point1;
     Point2 = point2;
   }
@@ -105,9 +99,6 @@ public class Circle : Shape {
   public int Radius {set; get;}
   public Circle (string borderColor, string backgroundColor, int borderWidth, 
                  Point center, int radius) : base(borderColor, backgroundColor, borderWidth){
-    BorderColor = borderColor; 
-    BorderWidth = borderWidth;
-    BackgroundColor = backgroundColor;
     Center = center; 
     Radius = radius;
   }        
@@ -121,9 +112,6 @@ public class Rectangle : Shape {
   public Rectangle (string borderColor, string backgroundColor, int borderWidth,
                      Point point1, Point point2, Point point3, Point point4)
                      : base(borderColor, backgroundColor , borderWidth){
-    BorderColor = borderColor; 
-    BorderWidth = borderWidth;
-    BackgroundColor = backgroundColor;
     Point1 = point1;
     Point2 = point2;
     Point3 = point3;
