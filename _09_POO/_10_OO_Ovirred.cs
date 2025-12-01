@@ -23,40 +23,40 @@ using System.Net;
 
 public class _10_Ovirred {
     public static void Main(string[] args){
-        BaseClass baseObject = new BaseClass(); 
-        baseObject.MethodA();
-        baseObject.MethodB();
+      BaseClass baseObject = new BaseClass(); 
+      baseObject.MethodA();
+      baseObject.MethodB();
 
-        SubClass subobject = new SubClass(); 
-        subobject.MethodA();
-        subobject.MethodB();
+      SubClass subobject = new SubClass(); 
+      subobject.MethodA();
+      subobject.MethodB();
 
-        BaseClass subObject1 = new SubClass();
-        subObject1.MethodA();
-        subObject1.MethodB();
+      BaseClass subObject1 = new SubClass();
+      subObject1.MethodA();
+      subObject1.MethodB();
     }
 }
 
 public class BaseClass{
     public virtual void MethodA(){
-        Console.WriteLine("BaseClass.MethodA()");
+      Console.WriteLine("BaseClass.MethodA()");
     }
 
     public virtual void MethodB(){
-        Console.WriteLine("BaseClass.MethodB()");
+      Console.WriteLine("BaseClass.MethodB()");
     }
 }
 
 public class SubClass : BaseClass {
     public override void MethodA(){
-        Console.WriteLine("SubClass.MethodA()");
+      Console.WriteLine("SubClass.MethodA()");
     }
 
     public new void MethodB(){
-        Console.WriteLine("SubClass.MethodB()");
+      Console.WriteLine("SubClass.MethodB()");
     }
 
     public void MethodC(){
-        Console.WriteLine("SubClass.MethodC()");
+      Console.WriteLine("SubClass.MethodC()");
     }
 }
