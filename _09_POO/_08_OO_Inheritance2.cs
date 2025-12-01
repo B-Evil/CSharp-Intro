@@ -11,7 +11,6 @@ public class HospitalApp{
             Email = "brunosantiago@email.com",
             Phone = "(77) 9999-9999"
         };
-
         person1.Print();
 
         Patient patient1 = new Patient {  //PATIENT
@@ -34,9 +33,7 @@ public class HospitalApp{
           NurseID = "nu-203",
           Shift = "Morning"
         };
-
         nurse1.Print(); 
-
     }
 }
 
@@ -95,5 +92,18 @@ public class Nurse : Employee{
         Console.WriteLine($"Nurse ID: {NurseID}");
         Console.WriteLine($"Shift: {Shift}");
         Console.WriteLine();
+    }
+}
+
+
+//HomeWork creat new Class Doctor
+public class Doctor : Employee{
+    public string DoctorID {get; set;}
+    public string Specialization {get; set;}
+    public void Print() {
+        base.Print(); 
+        Console.WriteLine($"Doctor");
+        Console.WriteLine($"Doctor Id : {DoctorID}");
+        Console.WriteLine($"Specialization: {Specialization}");
     }
 }
