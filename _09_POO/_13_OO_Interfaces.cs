@@ -112,7 +112,7 @@ public class GameEntity : IDamageable, ILogger{
         if(IsLive){
             Console.WriteLine(" - [Alive]");
         } else {
-            Console.WriteLine("[Dead]");
+            Console.WriteLine("- [Dead]");
         }
     }
 }
