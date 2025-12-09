@@ -5,7 +5,7 @@ public class GameApp{
     public static void Main(string[] args){
         //creat player
         GameEntity[] entity = new GameEntity[5];
-        entity[0] = new Player("Evil", 10, 100);
+        entity[0] = new Player("Nó cego", 10, 100);
         entity[1] = new Enimy("Goblin", 5, 10);
         entity[2] = new Enimy("Knight", 15, 27);
         entity[3] = new Enimy("Vampire", 5, 50);
@@ -41,7 +41,6 @@ public class GameApp{
                             player.TakeDamage(random.Next(0, enimy.Damage + 1));
                         }
                     }
-
                     if(!player.Islive){break;}
                 }
             }
