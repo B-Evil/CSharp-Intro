@@ -120,7 +120,7 @@ public class Rectangle : Shape {
   }
 
     public override double GetArea(){
-        Console.WriteLine();
+        Console.WriteLine("Area of Rectangle");
         return 54;
     }
 }
